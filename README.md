@@ -1,2 +1,2 @@
 # universal_msgs
-The universal package storing generally used msg srv action files.
+The universal package stores generally used msg srv action files.
