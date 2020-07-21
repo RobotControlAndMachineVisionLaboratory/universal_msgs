@@ -13,6 +13,7 @@ find_package(catkin REQUIRED COMPONENTS
   sensor_msgs
   message_generation
   geometry_msgs
+  ur_msgs
 )
 
 # find_package(Boost REQUIRED COMPONENTS system)
@@ -21,6 +22,8 @@ find_package(catkin REQUIRED COMPONENTS
 ## Generate messages in the 'msg' folder
 add_message_files(
   FILES
+  Command.msg
+  RobotMsg.msg
 )
 
 ## Generate services in the 'srv' folder
@@ -40,11 +43,12 @@ generate_messages(
   std_msgs
   sensor_msgs
   geometry_msgs
+  ur_msgs
 )
 
 catkin_package(
   CATKIN_DEPENDS
-  message_runtime roscpp rospy std_msgs cv_bridge image_transport sensor_msgs message_generation geometry_msgs
+  message_runtime roscpp rospy std_msgs cv_bridge image_transport sensor_msgs message_generation geometry_msgs ur_msgs
 )
 
 ###########
